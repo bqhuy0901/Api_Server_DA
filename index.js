@@ -15,9 +15,11 @@ app.use(cors());
 
 //import route
 const booksRouter = require("./routers/books.js")
+const categoriesRouter = require("./routers/category.js")
 
 //middlewear 
 app.use("/books", booksRouter)
+app.use("/category", categoriesRouter)
 
 
 
